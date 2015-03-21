@@ -43,6 +43,8 @@ public class MainController implements Initializable{
 		
 		instance = this;
 		
+		instance = this;
+		
 		DialogManager.getInstance();
 	}
 
