@@ -1,7 +1,8 @@
-# Yukitter ver. TweetOnly
+# Yukitter ver. SmallEdition
 
 - ~~ツイートしかできない~~俺得ツイッタークライアント：Yukitter
 - 以下のことができます
+ + OAuth認証でログインする。
  + ツイートを送信する
  + Command+Enterでツイートを送信する
  + 通知が来る(リプライ/お気に入り/リツイート)
