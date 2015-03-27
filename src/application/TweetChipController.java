@@ -179,9 +179,6 @@ public class TweetChipController extends ListCell<Status>{
 	private void inertMedia() {
 		imageFlowPane.getChildren().clear();
 		for(ImageView imageView : ImageManager.getSingleton().getImageView(status, retweetedStatus)) {
-//			imageView.setFitWidth(80);
-//			imageView.setFitHeight(100);
-//			imageView.setViewport(new Rectangle2D(image.getWidth()/2, image.getHeight()/2, 100, 100));
 			imageFlowPane.getChildren().add(imageView);
 			imageFlowPane.setVisible(true);
 		}

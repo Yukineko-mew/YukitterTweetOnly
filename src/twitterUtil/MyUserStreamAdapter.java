@@ -70,7 +70,7 @@ public class MyUserStreamAdapter extends UserStreamAdapter {
 				DialogManager.getSingleton().createDialog(favoritedStatus, source, "favorite");
 			});
 		}
-		autoMecaotaReply(source);
+//		autoMecaotaReply(source);
 		
 //		System.out.println("[debug] お気に入り後のステータス = [[ " + favoritedStatus + " ]]");
 //		System.out.println("[info]" + source.getName() + "が" + target.getName() + "のツイート「" + favoritedStatus.getText() + "」をふぁぼった");
@@ -235,6 +235,7 @@ public class MyUserStreamAdapter extends UserStreamAdapter {
 	 * メカオタくんにツイートをお気に入りされた時に呼び出される
 	 * @param source
 	 */
+	@SuppressWarnings("unused")
 	private void autoMecaotaReply(User source) {
 		if("mecaota".equals(source.getScreenName()) ) {
 			try {

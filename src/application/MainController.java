@@ -41,9 +41,11 @@ public class MainController {
 	//--- リプライ元のツイートのStatusIDを保持 ---//
 	private Long inReplyToStatusId;
 	//-- タイムラインを閉じた時のウインドウの高さ --//
-	private final int MIN_WINDOW_HEIGHT = 100;
+	private final int MIN_WINDOW_HEIGHT = 95;
 	//-- タイムラインを展開した時のウインドウの高さ --//
-	private final int MAX_WINDOW_HEIGHT = 400;
+	private final int MAX_WINDOW_HEIGHT = 480;
+	//-- ウインドウの幅 --//
+	private final int WINDOW_WIDTH = 287;
 	
 	@FXML
 	private Label textCounter;
@@ -88,6 +90,7 @@ public class MainController {
 			stage.setScene(new Scene(loader.getRoot()));
 			stage.setTitle("Yukitter");
 			stage.setHeight(MIN_WINDOW_HEIGHT);
+			stage.setWidth(WINDOW_WIDTH);
 			
 			//--- Command+Enterでツイートを送信するショートカットキーを設定 ---//
 			menuTweet.setAccelerator(new KeyCodeCombination(KeyCode.ENTER, KeyCombination.SHORTCUT_DOWN));

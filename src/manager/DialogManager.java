@@ -22,7 +22,7 @@ public class DialogManager {
 	 */
 	private DialogManager() {
 		alerts  = new ArrayList<AlertDialogController>();
-		sound = new Media(getClass().getResource("sample.mp3").toExternalForm());
+		sound = new Media(getClass().getResource("one14.mp3").toExternalForm());
 	}
 
 	/**
