@@ -1,6 +1,7 @@
-# Yukitter ver. SmallEdition
+# Yukitter.
 
-- ~~ツイートしかできない~~俺得ツイッタークライアント：Yukitter
+- ~~ツイートしかできない~~俺得ツイッタークライアント：Yukitter.
+
 - 以下のことができます
  + OAuth認証でログインする。
  + ツイートを送信する
