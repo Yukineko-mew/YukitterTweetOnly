@@ -9,8 +9,8 @@ import twitter4j.conf.ConfigurationBuilder;
 public class OAuthConfiguration implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private static String consumerKey = "zo0F2xRn5yDRETNcWGCNRw";
-	private static String consumerSecret = "T0ci9KZ2Ra3Olgyz2nBzO4JNJqSOeWBhqTHEWCzDw8";
+	private static String consumerKey = "Bo45i9x8STgQ1mxHn2httxiLC";
+	private static String consumerSecret = "cM453eUZwp3Buo9jMOcw8iNqw0Isqp5cYmeygTm3pqfn4M7NzY";
 	private static String accessTokenKey = null;
 	private static String accessTokenSecret = null;
 	
