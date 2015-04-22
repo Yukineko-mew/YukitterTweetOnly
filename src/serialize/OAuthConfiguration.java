@@ -1,16 +1,13 @@
 package serialize;
 
-import java.io.Serializable;
-
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.OAuthAuthorization;
 import twitter4j.conf.ConfigurationBuilder;
 
-public class OAuthConfiguration implements Serializable{
-	private static final long serialVersionUID = 1L;
+public class OAuthConfiguration{
 	
-	private static String consumerKey = "Bo45i9x8STgQ1mxHn2httxiLC";
-	private static String consumerSecret = "cM453eUZwp3Buo9jMOcw8iNqw0Isqp5cYmeygTm3pqfn4M7NzY";
+	private static String consumerKey = "zo0F2xRn5yDRETNcWGCNRw";
+	private static String consumerSecret = "T0ci9KZ2Ra3Olgyz2nBzO4JNJqSOeWBhqTHEWCzDw8";
 	private static String accessTokenKey = null;
 	private static String accessTokenSecret = null;
 	
@@ -21,7 +18,6 @@ public class OAuthConfiguration implements Serializable{
 	public static String getConsumerSecret() {
 		return consumerSecret;
 	}
-	
 	
 	public static void setAccessTokenKey(String theAccessTokenKey) {
 		accessTokenKey = theAccessTokenKey;
@@ -50,9 +46,9 @@ public class OAuthConfiguration implements Serializable{
 	@Override
 	public String toString() {
 		return "ConsumerKey = [[" + consumerKey + "]]\n"
-				+ "ConsumerKey = [[" + consumerSecret + "]]\n"
-				+ "ConsumerKey = [[" + accessTokenKey + "]]\n"
-				+ "ConsumerKey = [[" + accessTokenSecret + "]]\n";
+				+ "ConsumerSecret = [[" + consumerSecret + "]]\n"
+				+ "AccessTokenKey = [[" + accessTokenKey + "]]\n"
+				+ "AccessTokenSecret = [[" + accessTokenSecret + "]]\n";
 	}
 	
 }

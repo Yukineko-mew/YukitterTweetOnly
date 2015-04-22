@@ -88,7 +88,7 @@ public class MainController {
 			stage = new Stage(StageStyle.UNIFIED);
 			stage.setResizable(false);
 			stage.setScene(new Scene(loader.getRoot()));
-			stage.setTitle("Yukitter");
+			stage.setTitle("Yukitter.");
 			stage.setHeight(MIN_WINDOW_HEIGHT);
 			stage.setWidth(WINDOW_WIDTH);
 			
@@ -162,7 +162,6 @@ public class MainController {
 	 */
 	public void evolveTimelinePane(MouseEvent e) {
 		if(stage.getHeight() == MIN_WINDOW_HEIGHT ) {
-//			stage.setHeight(375);
 			stage.setHeight(MAX_WINDOW_HEIGHT);
 			timeline.requestFocus();
 		} else {

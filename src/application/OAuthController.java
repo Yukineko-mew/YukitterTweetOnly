@@ -7,7 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import serialize.OAuthConfiguration;
-import serialize.Deserialize;
+
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
@@ -54,7 +54,7 @@ public class OAuthController {
 	public OAuthController (Stage owner) {
 		this.file = new File(".yukitter_setting");
 
-		Deserialize.deserializationOAuthConfiguration();
+//		Deserialize.deserializationOAuthConfiguration();
 		
 		if(file.exists()) {
 			loadAccessToken();
@@ -75,6 +75,7 @@ public class OAuthController {
 			br.close();
 			
 			TwitterUtil.createSingleton();
+			System.out.println(new OAuthConfiguration());
 			@SuppressWarnings("unused")
 			MainController main = new MainController();
 
@@ -144,12 +145,13 @@ public class OAuthController {
 				writeAccessToken();
 				
 				TwitterUtil.createSingleton();
+				System.out.println(new OAuthConfiguration());
 				
 				@SuppressWarnings("unused")
 				MainController main = new MainController();
 			} catch (TwitterException te) {
 				if(401 == te.getStatusCode()){
-					System.out.println("Unable to get the access token.");
+					System.out.println("[[!!ERROR!!]] Unable to get the access token.");
 				}else{
 					te.printStackTrace();
 				}
